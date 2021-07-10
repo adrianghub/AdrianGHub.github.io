@@ -54,9 +54,9 @@ $(document).ready(function () {
   }
 
   function handleDatatableRender(data) {
-    tasksContainer.empty();
+    $tasksContainer.empty();
     data.forEach(function (task) {
-      createElement(task).appendTo(tasksContainer);
+      createElement(task).appendTo($tasksContainer);
     });
   }
 
